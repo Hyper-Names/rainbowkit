@@ -25,6 +25,7 @@ describe('cssObjectFromTheme', () => {
         "--rk-colors-error": "#FF494A",
         "--rk-colors-generalBorder": "rgba(0, 0, 0, 0.06)",
         "--rk-colors-generalBorderDim": "rgba(0, 0, 0, 0.03)",
+        "--rk-colors-hlText": "#9694FF",
         "--rk-colors-menuItemBackground": "rgba(60, 66, 66, 0.1)",
         "--rk-colors-modalBackdrop": "rgba(0, 0, 0, 0.3)",
         "--rk-colors-modalBackground": "#FFF",

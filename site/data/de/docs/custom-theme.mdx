@@ -50,6 +50,7 @@ const myCustomTheme: Theme = {
     profileForeground: '...',
     selectedOptionBorder: '...',
     standby: '...',
+    hlText: '...',
   },
   fonts: {
     body: '...',
@@ -91,12 +92,8 @@ npm install lodash.merge
 Importieren Sie es zusammen mit dem Thema, das Sie erweitern möchten (z.B.: `darkTheme`) und dem TypeScript-Typ `Theme`:
 
 ```tsx
-import merge from 'lodash.merge';
-import {
-  RainbowKitProvider,
-  darkTheme,
-  Theme,
-} from '@rainbow-me/rainbowkit';
+import merge from "lodash.merge";
+import { RainbowKitProvider, darkTheme, Theme } from "@rainbow-me/rainbowkit";
 ```
 
 Dann verbinden Sie das integrierte Thema mit den Theme-Token, die Sie überschreiben möchten. In diesem Beispiel überschreibe ich den `accentColor`-Token, um ihn an die Akzentfarbe meiner Marke anzupassen.
@@ -104,7 +101,7 @@ Dann verbinden Sie das integrierte Thema mit den Theme-Token, die Sie überschre
 ```tsx
 const myTheme = merge(darkTheme(), {
   colors: {
-    accentColor: '#07296d',
+    accentColor: "#07296d",
   },
 } as Theme);
 ```
@@ -138,7 +135,7 @@ import {
   cssStringFromTheme,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from "@rainbow-me/rainbowkit";
 
 const App = () => {
   return (

@@ -1,4 +1,3 @@
-import { useAccount, useAccountEffect, useConfig } from 'wagmi';
 import React, {
   createContext,
   type ReactNode,
@@ -8,6 +7,7 @@ import React, {
   useMemo,
   useState,
 } from 'react';
+import { useAccount, useAccountEffect, useConfig } from 'wagmi';
 import { useConnectionStatus } from '../../hooks/useConnectionStatus';
 import { AccountModal } from '../AccountModal/AccountModal';
 import { ChainModal } from '../ChainModal/ChainModal';
