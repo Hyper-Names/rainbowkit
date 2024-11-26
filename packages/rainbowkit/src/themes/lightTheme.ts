@@ -56,6 +56,7 @@ export const lightTheme = ({
     profileForeground: 'rgba(60, 66, 66, 0.06)',
     selectedOptionBorder: 'rgba(60, 66, 66, 0.1)',
     standby: '#FFD641',
+    hlText: '#9694FF',
   },
   shadows: {
     connectButton: '0px 4px 12px rgba(0, 0, 0, 0.1)',

@@ -1,7 +1,6 @@
 import type { Address } from 'viem';
 import { useBalance } from 'wagmi';
-import { useMainnetEnsAvatar } from './useMainnetEnsAvatar';
-import { useMainnetEnsName } from './useMainnetEnsName';
+import { useGetPrimaryName } from './useGetPrimaryName';
 
 interface UseProfileParameters {
   address?: Address;
@@ -9,11 +8,10 @@ interface UseProfileParameters {
 }
 
 export function useProfile({ address, includeBalance }: UseProfileParameters) {
-  const ensName = useMainnetEnsName(address);
-  const ensAvatar = useMainnetEnsAvatar(ensName);
+  const { primaryName } = useGetPrimaryName();
   const { data: balance } = useBalance({
     address: includeBalance ? address : undefined,
   });
 
-  return { ensName, ensAvatar, balance };
+  return { ensName: primaryName, ensAvatar: undefined, balance };
 }

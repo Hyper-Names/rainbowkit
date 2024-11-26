@@ -41,6 +41,7 @@ const themeContractValues = {
     profileForeground: '',
     selectedOptionBorder: '',
     standby: '',
+    hlText: '',
   },
   fonts: {
     body: '',
@@ -117,8 +118,8 @@ const dimensions = {
   '54': '54px',
   '60': '60px',
   '200': '200px',
-  'full': '100%',
-  'max': 'max-content',
+  full: '100%',
+  max: 'max-content',
 };
 
 const flexAlignment = ['flex-start', 'flex-end', 'center'] as const;
@@ -160,7 +161,7 @@ const unresponsiveProperties = defineProperties({
       '10': '10px',
       '13': '13px',
       '25%': '25%',
-      'full': '9999px',
+      full: '9999px',
     },
     borderStyle: {
       solid: 'solid',

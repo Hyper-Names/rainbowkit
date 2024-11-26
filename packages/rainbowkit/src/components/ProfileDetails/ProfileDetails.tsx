@@ -28,6 +28,10 @@ interface ProfileDetailsProps {
   onDisconnect: () => void;
 }
 
+export const TextStyle = {
+  color: '#9694FF !important',
+};
+
 export function ProfileDetails({
   address,
   ensAvatar,
@@ -108,7 +112,7 @@ export function ProfileDetails({
               <Box textAlign="center">
                 <Text
                   as="h1"
-                  color="modalText"
+                  color={ensName ? 'hlText' : 'modalText'}
                   id={titleId}
                   size={mobile ? '20' : '18'}
                   weight="heavy"
