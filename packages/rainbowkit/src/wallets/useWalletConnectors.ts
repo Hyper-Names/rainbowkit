@@ -1,12 +1,11 @@
 import { type Config, type Connector, useConnect } from 'wagmi';
 import type { ConnectMutateAsync } from 'wagmi/query';
-import { useWalletConnectOpenState } from '../components/RainbowKitProvider/ModalContext';
-import { indexBy } from '../utils/indexBy';
 import {
   useInitialChainId,
   useRainbowKitChains,
 } from '../components/RainbowKitProvider/RainbowKitChainContext';
-import type { WagmiConnectorInstance, WalletInstance } from './Wallet';
+import { useWalletConnectOpenState } from '../components/RainbowKitProvider/ModalContext';
+import { indexBy } from '../utils/indexBy';
 import {
   getDesktopDownloadUrl,
   getExtensionDownloadUrl,
@@ -20,6 +19,7 @@ import {
   rainbowKitConnectorWithWalletConnect,
 } from './groupedWallets';
 import { addRecentWalletId, getRecentWalletIds } from './recentWalletIds';
+import type { WagmiConnectorInstance, WalletInstance } from './Wallet';
 
 export interface WalletConnector extends WalletInstance {
   ready?: boolean;

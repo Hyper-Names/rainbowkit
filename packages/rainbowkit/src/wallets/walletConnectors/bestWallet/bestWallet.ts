@@ -1,6 +1,5 @@
-import type { Wallet } from '../../Wallet';
+import type { DefaultWalletOptions, Wallet } from '../../Wallet';
 import { getWalletConnectConnector } from '../../getWalletConnectConnector';
-import type { DefaultWalletOptions } from '../../Wallet';
 
 export type BestWalletOptions = DefaultWalletOptions;
 

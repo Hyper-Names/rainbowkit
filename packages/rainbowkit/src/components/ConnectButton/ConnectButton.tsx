@@ -15,7 +15,6 @@ import { I18nContext } from '../RainbowKitProvider/I18nContext';
 import { useRainbowKitChains } from '../RainbowKitProvider/RainbowKitChainContext';
 import { useShowBalance } from '../RainbowKitProvider/ShowBalanceContext';
 import { ConnectButtonRenderer } from './ConnectButtonRenderer';
-import { TextStyle } from '../ProfileDetails/ProfileDetails';
 
 type AccountStatus = 'full' | 'avatar' | 'address';
 type ChainStatus = 'full' | 'icon' | 'name' | 'none';

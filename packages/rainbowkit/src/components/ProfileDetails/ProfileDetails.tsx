@@ -28,10 +28,6 @@ interface ProfileDetailsProps {
   onDisconnect: () => void;
 }
 
-export const TextStyle = {
-  color: '#9694FF !important',
-};
-
 export function ProfileDetails({
   address,
   ensAvatar,
