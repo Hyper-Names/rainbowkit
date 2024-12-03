@@ -13,5 +13,9 @@ export function useProfile({ address, includeBalance }: UseProfileParameters) {
     address: includeBalance ? address : undefined,
   });
 
-  return { ensName: primaryName, ensAvatar: undefined, balance };
+  return {
+    ensName: primaryName === '' ? undefined : primaryName,
+    ensAvatar: undefined,
+    balance,
+  };
 }

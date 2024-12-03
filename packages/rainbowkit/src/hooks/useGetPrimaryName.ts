@@ -44,7 +44,7 @@ export const useGetPrimaryName = () => {
     queryKey: ['primaryName', address ? address : ''],
     queryFn: () => getPrimaryName(),
     enabled: !!address,
-    initialData: undefined,
+    initialData: '',
   });
   const getPrimaryName = async () => {
     if (address) {
@@ -58,13 +58,13 @@ export const useGetPrimaryName = () => {
       if (primaryName) {
         return primaryName as string;
       }
-      return undefined;
+      return '';
     }
-    return undefined;
+    return '';
   };
 
   return {
-    primaryName,
+    primaryName: primaryName === '' ? undefined : primaryName,
     isPrimaryNameLoading,
     primaryNameError,
     refetchPrimaryName,
